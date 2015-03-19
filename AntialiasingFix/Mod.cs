@@ -2,7 +2,7 @@
 using ICities;
 using UnityEngine;
 
-namespace DynamicResolution
+namespace DynamicResolutionLowPower
 {
 
     public class Mod : IUserMod
@@ -10,12 +10,12 @@ namespace DynamicResolution
 
         public string Name
         {
-            get { return "Dynamic resolution"; }
+            get { return "Dynamic Resolution - Low Power"; }
         }
 
         public string Description
         {
-            get { return "Allows you to upsample/ downsample from any resolution"; }
+            get { return "Version 1.0 of Dynamic Resolution for low power machines"; }
         }
 
     }

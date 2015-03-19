@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,8 +7,8 @@
     <ProjectGuid>{39BA47B9-F95D-4FA8-9269-5DC79F8A25F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DynamicResolution</RootNamespace>
-    <AssemblyName>DynamicResolution</AssemblyName>
+    <RootNamespace>DynamicResolutionLowPower</RootNamespace>
+    <AssemblyName>DynamicResolutionLowPower</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -32,18 +32,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ColossalManaged">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\ColossalManaged.dll</HintPath>
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\ColossalManaged.dll</HintPath>
     </Reference>
     <Reference Include="ICities">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll</HintPath>
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\ICities.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.XML" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\System.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\..\..\Volumes\Data\SteamLibrary\steamapps\common\Cities_Skylines\Cities.app\Contents\Resources\Data\Managed\System.Xml.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -53,15 +57,8 @@
     <Compile Include="DummyHook.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>copy DynamicResolution.dll "C:\Program Files (x86)\Steam\steamapps\workshop\content\255710\406629464"</PostBuildEvent>
-  </PropertyGroup>
-  <PropertyGroup>
-    <PreBuildEvent>del "C:\Program Files (x86)\Steam\steamapps\workshop\content\255710\406629464\DynamicResolution.dll"</PreBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

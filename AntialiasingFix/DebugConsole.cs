@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DynamicResolution
+namespace DynamicResolutionLowPower
 {
 
     public class Debugger

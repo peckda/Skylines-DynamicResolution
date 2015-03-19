@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DynamicResolution")]
+[assembly: AssemblyTitle("LowResolution")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DynamicResolution")]
+[assembly: AssemblyProduct("LowResolution")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0b41b0ef-782d-4d1c-8dd1-eb8c923be646")]
+[assembly: Guid("15A785DA-30DE-407C-8901-0B561D2EC976")]
 
 // Version information for an assembly consists of the following four values:
 //

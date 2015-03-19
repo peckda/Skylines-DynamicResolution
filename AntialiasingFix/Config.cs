@@ -3,14 +3,13 @@ using System.IO;
 using System.Xml.Serialization;
 using UnityEngine;
 
-namespace DynamicResolution
+namespace DynamicResolutionLowPower
 {
 
     public class Configuration
     {
 
         public float ssaaFactor = 1.0f;
-        public bool unlockSlider = false;
 
         public void OnPreSerialize()
         {
